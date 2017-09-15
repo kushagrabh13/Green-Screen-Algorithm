@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+body{
+    margin: 20px;
+    background: lightblue;
+}
+
+canvas {
+  border: 1px solid gray;
+  width: 400px;
+  height: auto;
+}
+input {
+  font-size: 15px;
+}

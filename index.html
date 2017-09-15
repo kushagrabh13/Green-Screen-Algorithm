@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>The Green Screen Algorithm</h1>
+        <title>The Green Screen Algorithm</title></head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+    <body>
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <div class = "col-lg-6">
+                    <div class="well">
+                        <canvas id="c1"></canvas>
+                    </div>
+                </div>
+                <div class = "col-lg-6">
+                    <div class="well">
+                        <canvas id="c2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class ="col-sm-3">
+                <p>Foreground Image</p><input type="file" multiple="false" accept="images/*" id="fginp" onchange="uploadfgimage()">
+            </div>
+            <div class ="col-sm-3 col-sm-offset-3">
+                <p>Background Image</p><input type="file" multiple="false" accept="images/*" id="bginp" onchange="uploadbgimage()">
+            </div>
+            <div class="row"></div>
+            <div class="col-sm-3">
+                <input type="button" id="btcomp" value="Make Composite" onclick="doGreenScreen()">
+            </div>
+            <div class="col-sm-3 col-sm-offset-3">
+                <input type="button" id="btclear" value="Clear Canvas" onclick="clearCanvas()">
+            </div>
+            <div class="row"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</html>
